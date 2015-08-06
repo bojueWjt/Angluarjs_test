@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="showApp">
+<head>
+	<meta charset="UTF-8" >
+	<title>几个标签方法的比较</title>
+	<link rel="stylesheet" href="css/Bootstrap.min.css">
+</head>
+<body ng-controller="showCtr">
+	<button class="btn btn-default" ng-click="change()">切换状态</button>
+	<h2 ng-show="state()">我是show方法</h2>
+	<h2 ng-hide="state()">我是hide方法</h2>
+	<h2 ng-if="state()">我是if方法</h2>
+	<script src="js/Angular.min.js"></script>
+	<script src="js/show&hide.js"></script>
+</body>
+</html>
