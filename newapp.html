@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="store">
+<head>
+	<meta charset="UTF-8">
+	<title>newapp</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	
+</head>
+<body>
+	<div ng-controller="StoreController as store">
+		<h1>{{store.product.name}}</h1>
+		<h2> ${{store.product.price}}</h2>
+		<p>{{store.product.description}}</p>
+	</div>
+<script src="js/angular.min.js"></script>
+<script>
+(function(){
+	var app = angular.module('store',[]);
+
+	app.controller('StoreController',function(){
+		this.product = gem;
+	});
+
+	var gem = {
+		name: "Dodecahedron",
+		price: 2.95,
+		description: ' System Analysis and Design Facility'
+	}
+
+	console.log(app.controller);
+})()
+</script>
+</body>
+</html>

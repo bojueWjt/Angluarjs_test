@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>scopeEqual</title>
+</head>
+<body ng-controller="myCtr">
+	CtrFlavor:
+	<input type="text" ng-model="ctrFlavor">
+	<br>
+	directive:
+	<drink flavor="ctrFlavor"></drink>
+	<script src="../js/angular.min.js"></script>	
+	<script src="../js/scopeEqual.js"></script>	
+</body>
+</html>

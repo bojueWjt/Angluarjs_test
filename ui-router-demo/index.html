@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>关于Angularjs-ui router的小demo</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body >
+	<nav class="navbar navbar-default">
+		<div class="navbar-inner">	
+			<a href="#" class="navbar-brand">快速开始</a>
+			<ul class="nav navbar-nav">
+				<li><a ui-sref="router1">这是路径1</a></li>
+				<li><a ui-sref="router2">这是路径2</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="row">
+		<div class="col-md-12">
+			<div class="well" ui-view></div>
+		</div>
+	</div>
+
+	<script src="../js/angular.min.js"></script>
+	<script src="../js/angular-ui-router.min.js"></script>
+	<script src="../js/router.js"></script>
+</body>
+</html>
